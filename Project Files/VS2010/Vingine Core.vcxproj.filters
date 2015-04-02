@@ -1,0 +1,600 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Code">
+      <UniqueIdentifier>{5064dcc9-7cc7-4eac-98da-8bd10e0aff5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{7bebc998-1326-4307-80e0-d0bd30e01f33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Font">
+      <UniqueIdentifier>{9cf45178-8fb1-4337-9cd8-d4263db86e2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Graphics">
+      <UniqueIdentifier>{cb144e87-559a-4a6a-97a7-8d0fb1f1586a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Input">
+      <UniqueIdentifier>{de10b6bd-deb5-4f67-848c-010d17f25751}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Math">
+      <UniqueIdentifier>{2bb45e18-a865-4be7-bf33-c745473ac0ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\XML">
+      <UniqueIdentifier>{7218ec44-8281-4d0a-bf48-16a84e4cc0c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Events">
+      <UniqueIdentifier>{2657becd-226a-481d-b346-4645b130fc34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Audio">
+      <UniqueIdentifier>{892955f6-3661-4a98-9aaf-a858fc0ebc68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Audio\fmod">
+      <UniqueIdentifier>{c7c76f1b-1221-400a-9c8b-76214b93a116}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Audio\oal">
+      <UniqueIdentifier>{4c6371fd-2536-40c2-a584-2782308c7cd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Input\nv-ndk-gamepad">
+      <UniqueIdentifier>{eea2ecdd-2656-4225-8d15-e9b157da04d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Android">
+      <UniqueIdentifier>{bd09896a-f82d-4022-821e-ccd5fa4e4380}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Code\AssertionError.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Camera.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Color.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\CommandLineManager.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\DebuggerInterface.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\DialogInterface.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Entity.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\FileIOInterface.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\HashedString.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\HashFunctions.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\main_html5.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\main_Win32.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\StringConversion.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\TerrestrialPhysicsSystem.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\TimeInterface.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Font\BitmapFont.cpp">
+      <Filter>Code\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\GameInterface.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Graphics\DebugDrawingSystem2D.cpp">
+      <Filter>Code\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Graphics\Light.cpp">
+      <Filter>Code\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Graphics\Material.cpp">
+      <Filter>Code\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Graphics\Mesh2DGeneration.cpp">
+      <Filter>Code\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Graphics\MeshGeneration3D.cpp">
+      <Filter>Code\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Graphics\MeshGenerationText.cpp">
+      <Filter>Code\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Graphics\NullTextureManager.cpp">
+      <Filter>Code\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Graphics\PerspectiveRenderingSystem.cpp">
+      <Filter>Code\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Graphics\STBTextureManager.cpp">
+      <Filter>Code\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Graphics\Texture.cpp">
+      <Filter>Code\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Graphics\TextureManager.cpp">
+      <Filter>Code\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Input\InputSystem.cpp">
+      <Filter>Code\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Input\Keyboard.cpp">
+      <Filter>Code\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Input\Mouse.cpp">
+      <Filter>Code\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Input\PeripheralInterface.cpp">
+      <Filter>Code\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Input\Xbox.cpp">
+      <Filter>Code\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Math\EngineMath.cpp">
+      <Filter>Code\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Math\EulerAngles.cpp">
+      <Filter>Code\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\XML\pugixml.cpp">
+      <Filter>Code\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\XML\XMLHelpers.cpp">
+      <Filter>Code\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Input\Gamepad.cpp">
+      <Filter>Code\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\NamedDataBundle.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Events\EventCourier.cpp">
+      <Filter>Code\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\EntityManager.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Audio\AudioInterface.cpp">
+      <Filter>Code\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Audio\FMODAudioInterface.cpp">
+      <Filter>Code\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Audio\OpenALAudioInterface.cpp">
+      <Filter>Code\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Audio\AudioFileLoader.cpp">
+      <Filter>Code\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\main_android.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\AssetInterface.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Graphics\RendererInterface.cpp">
+      <Filter>Code\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Graphics\OGLRendererInterface.cpp">
+      <Filter>Code\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Graphics\OGLES2RendererInterface.cpp">
+      <Filter>Code\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Input\nv-ndk-gamepad\nv_gamepad_jni.cpp">
+      <Filter>Code\Input\nv-ndk-gamepad</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\main_ps3.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Graphics\NullRendererInterface.cpp">
+      <Filter>Code\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Graphics\PSGLRendererInterface.cpp">
+      <Filter>Code\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Graphics\GLSLShaderLoader.cpp">
+      <Filter>Code\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Graphics\CgGLShaderLoader.cpp">
+      <Filter>Code\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Android\android_native_app_glue.cpp">
+      <Filter>Code\Android</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\main_vita.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Font\CachingFontLoader.cpp">
+      <Filter>Code\Font</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Code\AssertionError.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Bitmasking.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Camera.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\CameraComponent.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Color.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\CommandLineDelegate.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\CommandLineManager.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\CommandLineOption.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Component.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Constraints.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\DebuggerInterface.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Delegate.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\DialogInterface.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\EngineMacros.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Entity.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\FileIOInterface.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\GameInterface.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\HashedString.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\HashFunctions.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\PhysicsComponent.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\PlatformSpecificHeaders.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Socket.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\StringConversion.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\System.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\TerrestrialPhysicsSystem.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\TimeInterface.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Font\BitmapFont.hpp">
+      <Filter>Code\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Font\Glyph.hpp">
+      <Filter>Code\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Graphics\Bone.hpp">
+      <Filter>Code\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Graphics\DebugDrawingSystem2D.hpp">
+      <Filter>Code\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Graphics\Framebuffer.hpp">
+      <Filter>Code\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Graphics\glext.h">
+      <Filter>Code\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Graphics\Light.hpp">
+      <Filter>Code\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Graphics\Material.hpp">
+      <Filter>Code\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Graphics\Mesh2DGeneration.hpp">
+      <Filter>Code\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Graphics\MeshComponent.hpp">
+      <Filter>Code\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Graphics\MeshGeneration3D.hpp">
+      <Filter>Code\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Graphics\MeshGenerationText.hpp">
+      <Filter>Code\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Graphics\NullTextureManager.hpp">
+      <Filter>Code\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Graphics\PerspectiveRenderingSystem.hpp">
+      <Filter>Code\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Graphics\RenderingSystem.hpp">
+      <Filter>Code\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Graphics\stb_image.h">
+      <Filter>Code\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Graphics\STBTextureManager.hpp">
+      <Filter>Code\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Graphics\Tendon.hpp">
+      <Filter>Code\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Graphics\Texture.hpp">
+      <Filter>Code\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Graphics\TextureManager.hpp">
+      <Filter>Code\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Graphics\VertexAttribute.hpp">
+      <Filter>Code\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Graphics\VertexData.hpp">
+      <Filter>Code\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Graphics\VertexDataContainers.hpp">
+      <Filter>Code\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Input\Action.hpp">
+      <Filter>Code\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Input\Controller.hpp">
+      <Filter>Code\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Input\Gamepad.hpp">
+      <Filter>Code\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Input\InputComponent.hpp">
+      <Filter>Code\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Input\InputSystem.hpp">
+      <Filter>Code\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Input\Keyboard.hpp">
+      <Filter>Code\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Input\LocalController.hpp">
+      <Filter>Code\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Input\Mouse.hpp">
+      <Filter>Code\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Input\PeripheralInterface.hpp">
+      <Filter>Code\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Input\Xbox.hpp">
+      <Filter>Code\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Math\EngineMath.hpp">
+      <Filter>Code\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Math\EulerAngles.hpp">
+      <Filter>Code\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Math\Float4x4Matrix.hpp">
+      <Filter>Code\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Math\FloatVector2.hpp">
+      <Filter>Code\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Math\FloatVector3.hpp">
+      <Filter>Code\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Math\FloatVector4.hpp">
+      <Filter>Code\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Math\IntVector2.hpp">
+      <Filter>Code\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Math\IntVector3.hpp">
+      <Filter>Code\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Math\Matrix.hpp">
+      <Filter>Code\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Math\Plane.hpp">
+      <Filter>Code\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Math\Vector.hpp">
+      <Filter>Code\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Math\Vector2.hpp">
+      <Filter>Code\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Math\Vector3.hpp">
+      <Filter>Code\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Math\Vector4.hpp">
+      <Filter>Code\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\XML\pugiconfig.hpp">
+      <Filter>Code\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\XML\pugixml.hpp">
+      <Filter>Code\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\XML\XMLHelpers.hpp">
+      <Filter>Code\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\NamedDataBundle.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Events\EventSubscriber.hpp">
+      <Filter>Code\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Events\EventCourier.hpp">
+      <Filter>Code\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\EntityBlueprint.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Math\ConvertAngles.hpp">
+      <Filter>Code\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\ComponentSystem.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\EntityManager.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Audio\FMODAudioInterface.hpp">
+      <Filter>Code\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Audio\fmod\fmod.h">
+      <Filter>Code\Audio\fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Audio\fmod\fmod.hpp">
+      <Filter>Code\Audio\fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Audio\fmod\fmod_codec.h">
+      <Filter>Code\Audio\fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Audio\fmod\fmod_common.h">
+      <Filter>Code\Audio\fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Audio\fmod\fmod_dsp.h">
+      <Filter>Code\Audio\fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Audio\fmod\fmod_dsp_effects.h">
+      <Filter>Code\Audio\fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Audio\fmod\fmod_errors.h">
+      <Filter>Code\Audio\fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Audio\fmod\fmod_output.h">
+      <Filter>Code\Audio\fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Audio\OpenALAudioInterface.hpp">
+      <Filter>Code\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\BuildPreferences.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Audio\oal\al.h">
+      <Filter>Code\Audio\oal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Audio\oal\alc.h">
+      <Filter>Code\Audio\oal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Audio\oal\alext.h">
+      <Filter>Code\Audio\oal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Audio\oal\efx.h">
+      <Filter>Code\Audio\oal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Audio\oal\efx-creative.h">
+      <Filter>Code\Audio\oal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Audio\oal\efx-presets.h">
+      <Filter>Code\Audio\oal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Audio\AudioFileLoader.hpp">
+      <Filter>Code\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\AssetInterface.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\StandardAssetInterface.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\AndroidAssetInterface.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Audio\NullAudioInterface.hpp">
+      <Filter>Code\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Audio\AudioInterface.hpp">
+      <Filter>Code\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Graphics\RendererInterface.hpp">
+      <Filter>Code\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Graphics\OGLRendererInterface.hpp">
+      <Filter>Code\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Graphics\OGLES2RendererInterface.hpp">
+      <Filter>Code\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Audio\OpenSL10AudioInterface.hpp">
+      <Filter>Code\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Input\Touchscreen.hpp">
+      <Filter>Code\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Input\nv-ndk-gamepad\nv_gamepad_jni.h">
+      <Filter>Code\Input\nv-ndk-gamepad</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Graphics\NullRendererInterface.hpp">
+      <Filter>Code\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Graphics\PSGLRendererInterface.hpp">
+      <Filter>Code\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Math\UIntVector2.hpp">
+      <Filter>Code\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Android\android_native_app_glue.h">
+      <Filter>Code\Android</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Graphics\CachingShaderLoader.hpp">
+      <Filter>Code\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Graphics\GLSLShaderLoader.hpp">
+      <Filter>Code\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Graphics\CgGLShaderLoader.hpp">
+      <Filter>Code\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Graphics\NullShaderLoader.hpp">
+      <Filter>Code\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\ColorConstants.hpp">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Font\CachingFontLoader.hpp">
+      <Filter>Code\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Math\Float3x3Matrix.hpp">
+      <Filter>Code\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Math\UCharVector2.hpp">
+      <Filter>Code\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Graphics\GXPRendererInterface.hpp">
+      <Filter>Code\Graphics</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

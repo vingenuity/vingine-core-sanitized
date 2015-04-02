@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="NsightTegraProject">
+    <NsightTegraProjectRevisionNumber>9</NsightTegraProjectRevisionNumber>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Emscripten">
+      <Configuration>Debug</Configuration>
+      <Platform>Emscripten</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|PS3">
+      <Configuration>Debug</Configuration>
+      <Platform>PS3</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|PSVita">
+      <Configuration>Debug</Configuration>
+      <Platform>PSVita</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Tegra-Android">
+      <Configuration>Debug</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Emscripten">
+      <Configuration>Release</Configuration>
+      <Platform>Emscripten</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|PS3">
+      <Configuration>Release</Configuration>
+      <Platform>PS3</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|PSVita">
+      <Configuration>Release</Configuration>
+      <Platform>PSVita</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Tegra-Android">
+      <Configuration>Release</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{51A4023E-E836-43D9-B1E6-7953C3879344}</ProjectGuid>
+    <RootNamespace>VingineCore</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Emscripten'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Emscripten'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">
+    <AndroidMinAPI>android-19</AndroidMinAPI>
+    <AndroidNativeAPI>UseTarget</AndroidNativeAPI>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">
+    <AndroidTargetAPI>android-21</AndroidTargetAPI>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidNativeAPI>UseMin</AndroidNativeAPI>
+    <AndroidStlType>gnustl_static</AndroidStlType>
+    <AndroidMaxAPI />
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|PS3'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|PS3'">
+    <ExceptionsAndRtti>WithExceptsWithRtti</ExceptionsAndRtti>
+    <PlatformToolset>GCC</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|PS3'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|PS3'">
+    <ExceptionsAndRtti>WithExceptsWithRtti</ExceptionsAndRtti>
+    <PlatformToolset>GCC</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidMinAPI>android-19</AndroidMinAPI>
+    <AndroidTargetAPI>android-21</AndroidTargetAPI>
+    <AndroidMaxAPI />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)..\..\Libraries\</OutDir>
+    <IntDir>$(SolutionDir)..\..\temp-files\$(Platform)\$(ProjectName)_$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>C:\Program Files (x86)\Visual Leak Detector\include;$(CG_INC_PATH);$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files (x86)\Visual Leak Detector\lib;D:\Git\vingine-core\Libraries;$(CG_LIB_PATH);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)..\..\Libraries\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>$(SolutionDir)..\..\temp-files\$(Platform)\$(ProjectName)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Emscripten'">
+    <OutDir>$(SolutionDir)..\..\Libraries\</OutDir>
+    <IntDir>$(SolutionDir)..\..\temp-files\$(ProjectName)_$(Configuration)\</IntDir>
+    <TargetExt>.bc</TargetExt>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Emscripten'">
+    <OutDir>$(SolutionDir)..\..\Libraries\</OutDir>
+    <IntDir>$(SolutionDir)..\..\temp-files\$(ProjectName)_$(Configuration)\</IntDir>
+    <TargetExt>.bc</TargetExt>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">
+    <OutDir>$(SolutionDir)..\..\Libraries\</OutDir>
+    <IntDir>$(SolutionDir)..\..\temp-files\$(Platform)\$(ProjectName)_$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+    <TargetExt>.a</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|PS3'">
+    <OutDir>$(SolutionDir)..\..\Libraries\</OutDir>
+    <IntDir>$(SolutionDir)..\..\temp-files\$(ProjectName)_$(Configuration)\</IntDir>
+    <TargetExt>.a</TargetExt>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+    <LibraryPath>$(SCE_PS3_ROOT)\target\ppu\lib</LibraryPath>
+    <IncludePath>$(SN_COMMON_PATH)\..\PS3\ppu\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|PS3'">
+    <OutDir>$(SolutionDir)..\..\Libraries\</OutDir>
+    <IntDir>$(SolutionDir)..\..\temp-files\$(ProjectName)_$(Configuration)\</IntDir>
+    <TargetExt>.a</TargetExt>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+    <LibraryPath>$(SCE_PS3_ROOT)\target\ppu\lib</LibraryPath>
+    <IncludePath>$(SN_COMMON_PATH)\..\PS3\ppu\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">
+    <LibraryPath>../../Libraries</LibraryPath>
+    <OutDir>$(SolutionDir)..\..\Libraries\</OutDir>
+    <IntDir>$(SolutionDir)..\..\Temp Files\$(ProjectName)_$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+    <TargetExt>.a</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">
+    <LibraryPath>../../Libraries</LibraryPath>
+    <OutDir>$(SolutionDir)..\..\Libraries\</OutDir>
+    <IntDir>$(SolutionDir)..\..\Temp Files\$(ProjectName)_$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+    <TargetExt>.a</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">
+    <OutDir>$(SolutionDir)..\..\Libraries\</OutDir>
+    <IntDir>$(SolutionDir)..\..\temp-files\$(Platform)\$(ProjectName)_$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+    <TargetExt>.a</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>"C:\Program Files (x86)\Visual Leak Detector\lib\Win32\";</AdditionalLibraryDirectories>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Emscripten'">
+    <ClCompile>
+      <AdditionalOptions>-std=c++11 %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__EMSCRIPTEN__</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Emscripten'">
+    <ClCompile>
+      <AdditionalOptions>-std=c++11 %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__EMSCRIPTEN__</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">
+    <ClCompile>
+      <GccExceptionHandling>true</GccExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CppLanguageStandard>gnu++11</CppLanguageStandard>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <ThinArchive>false</ThinArchive>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|PS3'">
+    <ClCompile>
+      <CppDialect>
+      </CppDialect>
+      <PreprocessorDefinitions>DEBUG_BUILD;SN_TARGET_PS3;__GCC__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-invalid-offsetof </AdditionalOptions>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|PS3'">
+    <ClCompile>
+      <PreprocessorDefinitions>SN_TARGET_PS3;__GCC__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CppDialect>-fabi-version=7</CppDialect>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-invalid-offsetof </AdditionalOptions>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">
+    <ClCompile>
+      <CppLanguageStd>Cpp11</CppLanguageStd>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CppExceptions>true</CppExceptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">
+    <ClCompile>
+      <CppLanguageStd>Cpp11</CppLanguageStd>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CppExceptions>true</CppExceptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">
+    <ClCompile>
+      <GccExceptionHandling>true</GccExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CppLanguageStandard>gnu++11</CppLanguageStandard>
+    </ClCompile>
+    <Lib>
+      <ThinArchive>false</ThinArchive>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Code\Android\android_native_app_glue.cpp" />
+    <ClCompile Include="..\..\Code\AssertionError.cpp" />
+    <ClCompile Include="..\..\Code\AssetInterface.cpp" />
+    <ClCompile Include="..\..\Code\Audio\AudioFileLoader.cpp" />
+    <ClCompile Include="..\..\Code\Audio\AudioInterface.cpp" />
+    <ClCompile Include="..\..\Code\Audio\FMODAudioInterface.cpp" />
+    <ClCompile Include="..\..\Code\Audio\OpenALAudioInterface.cpp" />
+    <ClCompile Include="..\..\Code\Camera.cpp" />
+    <ClCompile Include="..\..\Code\Color.cpp" />
+    <ClCompile Include="..\..\Code\CommandLineManager.cpp" />
+    <ClCompile Include="..\..\Code\DebuggerInterface.cpp" />
+    <ClCompile Include="..\..\Code\DialogInterface.cpp" />
+    <ClCompile Include="..\..\Code\Entity.cpp" />
+    <ClCompile Include="..\..\Code\EntityManager.cpp" />
+    <ClCompile Include="..\..\Code\Events\EventCourier.cpp" />
+    <ClCompile Include="..\..\Code\FileIOInterface.cpp" />
+    <ClCompile Include="..\..\Code\Font\BitmapFont.cpp" />
+    <ClCompile Include="..\..\Code\Font\CachingFontLoader.cpp" />
+    <ClCompile Include="..\..\Code\GameInterface.cpp" />
+    <ClCompile Include="..\..\Code\Graphics\CgGLShaderLoader.cpp" />
+    <ClCompile Include="..\..\Code\Graphics\DebugDrawingSystem2D.cpp" />
+    <ClCompile Include="..\..\Code\Graphics\GLSLShaderLoader.cpp" />
+    <ClCompile Include="..\..\Code\Graphics\Light.cpp" />
+    <ClCompile Include="..\..\Code\Graphics\Material.cpp" />
+    <ClCompile Include="..\..\Code\Graphics\Mesh2DGeneration.cpp" />
+    <ClCompile Include="..\..\Code\Graphics\MeshGeneration3D.cpp" />
+    <ClCompile Include="..\..\Code\Graphics\MeshGenerationText.cpp" />
+    <ClCompile Include="..\..\Code\Graphics\NullRendererInterface.cpp" />
+    <ClCompile Include="..\..\Code\Graphics\NullTextureManager.cpp" />
+    <ClCompile Include="..\..\Code\Graphics\OGLES2RendererInterface.cpp" />
+    <ClCompile Include="..\..\Code\Graphics\OGLRendererInterface.cpp" />
+    <ClCompile Include="..\..\Code\Graphics\PerspectiveRenderingSystem.cpp" />
+    <ClCompile Include="..\..\Code\Graphics\PSGLRendererInterface.cpp" />
+    <ClCompile Include="..\..\Code\Graphics\RendererInterface.cpp" />
+    <ClCompile Include="..\..\Code\Graphics\STBTextureManager.cpp" />
+    <ClCompile Include="..\..\Code\Graphics\Texture.cpp" />
+    <ClCompile Include="..\..\Code\Graphics\TextureManager.cpp" />
+    <ClCompile Include="..\..\Code\HashedString.cpp" />
+    <ClCompile Include="..\..\Code\HashFunctions.cpp" />
+    <ClCompile Include="..\..\Code\Input\Gamepad.cpp" />
+    <ClCompile Include="..\..\Code\Input\InputSystem.cpp" />
+    <ClCompile Include="..\..\Code\Input\Keyboard.cpp" />
+    <ClCompile Include="..\..\Code\Input\Mouse.cpp" />
+    <ClCompile Include="..\..\Code\Input\nv-ndk-gamepad\nv_gamepad_jni.cpp" />
+    <ClCompile Include="..\..\Code\Input\PeripheralInterface.cpp" />
+    <ClCompile Include="..\..\Code\Input\Xbox.cpp" />
+    <ClCompile Include="..\..\Code\main_android.cpp" />
+    <ClCompile Include="..\..\Code\main_html5.cpp" />
+    <ClCompile Include="..\..\Code\main_ps3.cpp" />
+    <ClCompile Include="..\..\Code\main_vita.cpp" />
+    <ClCompile Include="..\..\Code\main_Win32.cpp" />
+    <ClCompile Include="..\..\Code\Math\EngineMath.cpp" />
+    <ClCompile Include="..\..\Code\Math\EulerAngles.cpp" />
+    <ClCompile Include="..\..\Code\NamedDataBundle.cpp" />
+    <ClCompile Include="..\..\Code\StringConversion.cpp" />
+    <ClCompile Include="..\..\Code\TerrestrialPhysicsSystem.cpp" />
+    <ClCompile Include="..\..\Code\TimeInterface.cpp" />
+    <ClCompile Include="..\..\Code\XML\pugixml.cpp" />
+    <ClCompile Include="..\..\Code\XML\XMLHelpers.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Code\AndroidAssetInterface.hpp" />
+    <ClInclude Include="..\..\Code\Android\android_native_app_glue.h" />
+    <ClInclude Include="..\..\Code\AssertionError.hpp" />
+    <ClInclude Include="..\..\Code\AssetInterface.hpp" />
+    <ClInclude Include="..\..\Code\Audio\AudioFileLoader.hpp" />
+    <ClInclude Include="..\..\Code\Audio\AudioInterface.hpp" />
+    <ClInclude Include="..\..\Code\Audio\FMODAudioInterface.hpp" />
+    <ClInclude Include="..\..\Code\Audio\fmod\fmod.h" />
+    <ClInclude Include="..\..\Code\Audio\fmod\fmod.hpp" />
+    <ClInclude Include="..\..\Code\Audio\fmod\fmod_codec.h" />
+    <ClInclude Include="..\..\Code\Audio\fmod\fmod_common.h" />
+    <ClInclude Include="..\..\Code\Audio\fmod\fmod_dsp.h" />
+    <ClInclude Include="..\..\Code\Audio\fmod\fmod_dsp_effects.h" />
+    <ClInclude Include="..\..\Code\Audio\fmod\fmod_errors.h" />
+    <ClInclude Include="..\..\Code\Audio\fmod\fmod_output.h" />
+    <ClInclude Include="..\..\Code\Audio\NullAudioInterface.hpp" />
+    <ClInclude Include="..\..\Code\Audio\oal\al.h" />
+    <ClInclude Include="..\..\Code\Audio\oal\alc.h" />
+    <ClInclude Include="..\..\Code\Audio\oal\alext.h" />
+    <ClInclude Include="..\..\Code\Audio\oal\efx-creative.h" />
+    <ClInclude Include="..\..\Code\Audio\oal\efx-presets.h" />
+    <ClInclude Include="..\..\Code\Audio\oal\efx.h" />
+    <ClInclude Include="..\..\Code\Audio\OpenALAudioInterface.hpp" />
+    <ClInclude Include="..\..\Code\Audio\OpenSL10AudioInterface.hpp" />
+    <ClInclude Include="..\..\Code\Bitmasking.hpp" />
+    <ClInclude Include="..\..\Code\BuildPreferences.hpp" />
+    <ClInclude Include="..\..\Code\Camera.hpp" />
+    <ClInclude Include="..\..\Code\CameraComponent.hpp" />
+    <ClInclude Include="..\..\Code\Color.hpp" />
+    <ClInclude Include="..\..\Code\ColorConstants.hpp" />
+    <ClInclude Include="..\..\Code\CommandLineDelegate.hpp" />
+    <ClInclude Include="..\..\Code\CommandLineManager.hpp" />
+    <ClInclude Include="..\..\Code\CommandLineOption.hpp" />
+    <ClInclude Include="..\..\Code\Component.hpp" />
+    <ClInclude Include="..\..\Code\ComponentSystem.hpp" />
+    <ClInclude Include="..\..\Code\Constraints.hpp" />
+    <ClInclude Include="..\..\Code\DebuggerInterface.hpp" />
+    <ClInclude Include="..\..\Code\Delegate.hpp" />
+    <ClInclude Include="..\..\Code\DialogInterface.hpp" />
+    <ClInclude Include="..\..\Code\EngineMacros.hpp" />
+    <ClInclude Include="..\..\Code\Entity.hpp" />
+    <ClInclude Include="..\..\Code\EntityBlueprint.hpp" />
+    <ClInclude Include="..\..\Code\EntityManager.hpp" />
+    <ClInclude Include="..\..\Code\Events\EventCourier.hpp" />
+    <ClInclude Include="..\..\Code\Events\EventSubscriber.hpp" />
+    <ClInclude Include="..\..\Code\FileIOInterface.hpp" />
+    <ClInclude Include="..\..\Code\Font\BitmapFont.hpp" />
+    <ClInclude Include="..\..\Code\Font\CachingFontLoader.hpp" />
+    <ClInclude Include="..\..\Code\Font\Glyph.hpp" />
+    <ClInclude Include="..\..\Code\GameInterface.hpp" />
+    <ClInclude Include="..\..\Code\Graphics\Bone.hpp" />
+    <ClInclude Include="..\..\Code\Graphics\CachingShaderLoader.hpp" />
+    <ClInclude Include="..\..\Code\Graphics\CgGLShaderLoader.hpp" />
+    <ClInclude Include="..\..\Code\Graphics\DebugDrawingSystem2D.hpp" />
+    <ClInclude Include="..\..\Code\Graphics\Framebuffer.hpp" />
+    <ClInclude Include="..\..\Code\Graphics\glext.h" />
+    <ClInclude Include="..\..\Code\Graphics\GLSLShaderLoader.hpp" />
+    <ClInclude Include="..\..\Code\Graphics\GXPRendererInterface.hpp" />
+    <ClInclude Include="..\..\Code\Graphics\Light.hpp" />
+    <ClInclude Include="..\..\Code\Graphics\Material.hpp" />
+    <ClInclude Include="..\..\Code\Graphics\Mesh2DGeneration.hpp" />
+    <ClInclude Include="..\..\Code\Graphics\MeshComponent.hpp" />
+    <ClInclude Include="..\..\Code\Graphics\MeshGeneration3D.hpp" />
+    <ClInclude Include="..\..\Code\Graphics\MeshGenerationText.hpp" />
+    <ClInclude Include="..\..\Code\Graphics\NullRendererInterface.hpp" />
+    <ClInclude Include="..\..\Code\Graphics\NullShaderLoader.hpp" />
+    <ClInclude Include="..\..\Code\Graphics\NullTextureManager.hpp" />
+    <ClInclude Include="..\..\Code\Graphics\OGLES2RendererInterface.hpp" />
+    <ClInclude Include="..\..\Code\Graphics\OGLRendererInterface.hpp" />
+    <ClInclude Include="..\..\Code\Graphics\PerspectiveRenderingSystem.hpp" />
+    <ClInclude Include="..\..\Code\Graphics\PSGLRendererInterface.hpp" />
+    <ClInclude Include="..\..\Code\Graphics\RendererInterface.hpp" />
+    <ClInclude Include="..\..\Code\Graphics\RenderingSystem.hpp" />
+    <ClInclude Include="..\..\Code\Graphics\STBTextureManager.hpp" />
+    <ClInclude Include="..\..\Code\Graphics\stb_image.h" />
+    <ClInclude Include="..\..\Code\Graphics\Tendon.hpp" />
+    <ClInclude Include="..\..\Code\Graphics\Texture.hpp" />
+    <ClInclude Include="..\..\Code\Graphics\TextureManager.hpp" />
+    <ClInclude Include="..\..\Code\Graphics\VertexAttribute.hpp" />
+    <ClInclude Include="..\..\Code\Graphics\VertexData.hpp" />
+    <ClInclude Include="..\..\Code\Graphics\VertexDataContainers.hpp" />
+    <ClInclude Include="..\..\Code\HashedString.hpp" />
+    <ClInclude Include="..\..\Code\HashFunctions.hpp" />
+    <ClInclude Include="..\..\Code\Input\Action.hpp" />
+    <ClInclude Include="..\..\Code\Input\Controller.hpp" />
+    <ClInclude Include="..\..\Code\Input\Gamepad.hpp" />
+    <ClInclude Include="..\..\Code\Input\InputComponent.hpp" />
+    <ClInclude Include="..\..\Code\Input\InputSystem.hpp" />
+    <ClInclude Include="..\..\Code\Input\Keyboard.hpp" />
+    <ClInclude Include="..\..\Code\Input\LocalController.hpp" />
+    <ClInclude Include="..\..\Code\Input\Mouse.hpp" />
+    <ClInclude Include="..\..\Code\Input\nv-ndk-gamepad\nv_gamepad_jni.h" />
+    <ClInclude Include="..\..\Code\Input\PeripheralInterface.hpp" />
+    <ClInclude Include="..\..\Code\Input\Touchscreen.hpp" />
+    <ClInclude Include="..\..\Code\Input\Xbox.hpp" />
+    <ClInclude Include="..\..\Code\Math\ConvertAngles.hpp" />
+    <ClInclude Include="..\..\Code\Math\EngineMath.hpp" />
+    <ClInclude Include="..\..\Code\Math\EulerAngles.hpp" />
+    <ClInclude Include="..\..\Code\Math\Float3x3Matrix.hpp" />
+    <ClInclude Include="..\..\Code\Math\Float4x4Matrix.hpp" />
+    <ClInclude Include="..\..\Code\Math\FloatVector2.hpp" />
+    <ClInclude Include="..\..\Code\Math\FloatVector3.hpp" />
+    <ClInclude Include="..\..\Code\Math\FloatVector4.hpp" />
+    <ClInclude Include="..\..\Code\Math\IntVector2.hpp" />
+    <ClInclude Include="..\..\Code\Math\IntVector3.hpp" />
+    <ClInclude Include="..\..\Code\Math\Matrix.hpp" />
+    <ClInclude Include="..\..\Code\Math\Plane.hpp" />
+    <ClInclude Include="..\..\Code\Math\UCharVector2.hpp" />
+    <ClInclude Include="..\..\Code\Math\UIntVector2.hpp" />
+    <ClInclude Include="..\..\Code\Math\Vector.hpp" />
+    <ClInclude Include="..\..\Code\Math\Vector2.hpp" />
+    <ClInclude Include="..\..\Code\Math\Vector3.hpp" />
+    <ClInclude Include="..\..\Code\Math\Vector4.hpp" />
+    <ClInclude Include="..\..\Code\NamedDataBundle.hpp" />
+    <ClInclude Include="..\..\Code\PhysicsComponent.hpp" />
+    <ClInclude Include="..\..\Code\PlatformSpecificHeaders.hpp" />
+    <ClInclude Include="..\..\Code\Socket.hpp" />
+    <ClInclude Include="..\..\Code\StandardAssetInterface.hpp" />
+    <ClInclude Include="..\..\Code\StringConversion.hpp" />
+    <ClInclude Include="..\..\Code\System.hpp" />
+    <ClInclude Include="..\..\Code\TerrestrialPhysicsSystem.hpp" />
+    <ClInclude Include="..\..\Code\TimeInterface.hpp" />
+    <ClInclude Include="..\..\Code\XML\pugiconfig.hpp" />
+    <ClInclude Include="..\..\Code\XML\pugixml.hpp" />
+    <ClInclude Include="..\..\Code\XML\XMLHelpers.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
